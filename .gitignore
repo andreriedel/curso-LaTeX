@@ -1,0 +1,13 @@
+# ignora tudo
+*
+
+# exceto esses arquivos
+!.gitignore
+!*.md
+!*.tex
+!*.pdf
+!*.jpg
+!*.png
+
+# permite o trackeamento dos arquivos listados acima mesmo se esses estiverem em sub-diretórios
+!*/
