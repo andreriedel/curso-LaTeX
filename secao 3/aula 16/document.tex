@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage[a4paper, left=3cm, top=3cm, right=2cm, bottom=2cm]{geometry}
+\usepackage[usenames, dvipnames]{xcolor}
+
+% ---------------------------------------------------------------------------- %
+% *ANCHOR tags globais.
+
+\setlength{\parindent}{1.5cm}
+\setlength{\parskip}{0.5cm}
+
+% ---------------------------------------------------------------------------- %
+
+\begin{document}
+
+\section{Lista não-ordenada}
+
+\begin{itemize}
+    \item Primeiro item
+    \item Segundo item
+\end{itemize}
+
+\begin{itemize}
+    \item Primeiro item
+    \item Segundo item
+          \begin{itemize}
+              \item Primeiro subitem
+              \item Segundo subitem
+          \end{itemize}
+\end{itemize}
+
+\section{Lista ordenada}
+
+\begin{enumerate}
+    \item Primeiro item
+    \item Segundo item
+          \begin{enumerate}
+              \item Primeiro subitem
+              \item Segundo subitem
+          \end{enumerate}
+\end{enumerate}
+
+\section{Lista descritiva}
+
+\begin{description}
+    \item[Descrição do primeiro item] Primeiro item
+    \item[Descrição do segundo item] Segundo item
+\end{description}
+
+\end{document}
