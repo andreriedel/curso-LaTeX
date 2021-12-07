@@ -1,0 +1,92 @@
+\documentclass[12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage[a4paper, left=3cm, top=3cm, right=2cm, top=2cm]{geometry}
+\usepackage[usenames, dvipsnames]{xcolor}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{multirow}
+\usepackage{tabularx}
+
+% ---------------------------------------------------------------------------- %
+% *ANCHOR tags globais.
+
+\setlength{\parindent}{1.5cm}
+\setlength{\parskip}{0.5cm}
+    
+% ---------------------------------------------------------------------------- %
+
+\begin{document}
+
+\tableofcontents
+\newpage
+
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+% ---------------------------------------------------------------------------- %
+
+\section{Inserindo figuras e tabelas}
+
+Est exercitation dolore sit incididunt reprehenderit proident tempor sint commodo culpa velit nulla aliquip. Excepteur ut ad excepteur amet. Adipisicing commodo ullamco exercitation ullamco labore in. Cupidatat nulla consequat aliquip cupidatat officia officia fugiat incididunt quis laboris voluptate minim veniam magna. Cupidatat est nulla veniam velit sit irure fugiat exercitation quis aliquip. Deserunt incididunt nostrud sit labore deserunt proident do irure qui proident fugiat. Enim duis officia veniam id qui aute.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=5cm]{img/img}
+    \caption[Programando]{Esta é um legenda longa}
+    \label{fig:prog}
+\end{figure}
+
+Est exercitation dolore sit incididunt reprehenderit proident tempor sint commodo culpa velit nulla aliquip. Excepteur ut ad excepteur amet. Adipisicing commodo ullamco exercitation ullamco labore in. Cupidatat nulla consequat aliquip cupidatat officia officia fugiat incididunt quis laboris voluptate minim veniam magna. Cupidatat est nulla veniam velit sit irure fugiat exercitation quis aliquip. Deserunt incididunt nostrud sit labore deserunt proident do irure qui proident fugiat. Enim duis officia veniam id qui aute.
+
+Voluptate ea laborum officia laborum sunt eiusmod irure excepteur nisi voluptate exercitation nostrud. Lorem ipsum nisi nisi eu nostrud deserunt ullamco sunt amet excepteur. Ex occaecat eiusmod aliqua qui minim anim ea eiusmod aute cupidatat non magna officia. Sit nostrud ex proident consequat ad ut nulla laboris anim cillum mollit mollit labore.
+
+\begin{table}[H]
+    \centering
+    \caption[Legenda curta]{Legenda longa}
+    \label{tab:tab1}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        A1 & B1 & C1 \\ \hline
+        A2 & B2 & C2 \\ \hline
+    \end{tabular}
+\end{table}
+
+Dolore qui sit laboris aliqua tempor proident. Officia labore cillum enim laboris in id qui Lorem. Excepteur sunt eu culpa amet aliquip irure dolor aliqua officia aliqua mollit ullamco. Fugiat anim minim proident officia duis. Sint ipsum ad ea eu consectetur anim. Pariatur non nulla aliquip ullamco est sint adipisicing non ea laboris adipisicing magna. Et laboris reprehenderit laborum ea eiusmod tempor elit occaecat.
+
+\renewcommand{\arraystretch}{2}
+\begin{table}[H]
+    \centering
+    \caption[Legenda curta]{Legenda longa}
+    \label{tab:tab2}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \multirow{2}{*}{A1} & \multicolumn{2}{c|}{B1}      \\ \cline{2-3}
+        & B2                      & C2 \\ \hline
+    \end{tabular}
+\end{table}
+
+Dolore qui sit laboris aliqua tempor proident. Officia labore cillum enim laboris in id qui Lorem. Excepteur sunt eu culpa amet aliquip irure dolor aliqua officia aliqua mollit ullamco. Fugiat anim minim proident officia duis. Sint ipsum ad ea eu consectetur anim. Pariatur non nulla aliquip ullamco est sint adipisicing non ea laboris adipisicing magna. Et laboris reprehenderit laborum ea eiusmod tempor elit occaecat.
+
+\renewcommand{\arraystretch}{2}
+\begin{table}[H]
+    \centering
+    \caption[Legenda curta]{Legenda longa}
+    \label{tab:tab3}
+    \begin{tabularx}{0.5\textwidth}{|X|X|X|}
+        \hline
+        \centering \multirow{2}{*}{A1} & \multicolumn{2}{c|}{B1}      \\ \cline{2-3}
+                                       & B2                      & C2 \\ \hline
+    \end{tabularx}
+\end{table}
+
+\end{document}
