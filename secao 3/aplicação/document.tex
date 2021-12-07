@@ -1,0 +1,144 @@
+\documentclass[12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage[a4paper, left=3cm, top=3cm, right=2cm, top=2cm]{geometry}
+\usepackage[usenames, dvipsnames]{xcolor}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{multirow}
+\usepackage{tabularx}
+
+% ---------------------------------------------------------------------------- %
+
+% *ANCHOR tags globais.
+
+\setlength{\parindent}{1.5cm}
+\setlength{\parskip}{0.5cm}
+
+\definecolor{myColor1}{HTML}{008080} % tipo de cor em HTML
+\definecolor{myColor2}{HTML}{E1E1E1} % tipo de cor em HTML
+
+% ---------------------------------------------------------------------------- %
+
+\begin{document} % *ANCHOR Início do documento.
+
+% ---------------------------------------------------------------------------- %
+
+% *ANCHOR: Capa do documento
+
+\thispagestyle{empty}
+
+\title{\textbf{{\Huge Título do Documento}}}
+\author{André Zambroni Riedel}
+\date{Maio de 2021}
+
+\maketitle
+\newpage
+
+% ---------------------------------------------------------------------------- %
+
+\pagenumbering{Roman}
+
+\tableofcontents
+\newpage
+
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+% ---------------------------------------------------------------------------- %
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\part{Lorem ipsum}
+
+\chapter{Commodo pariatur nisi eiusmod elit}
+
+% *ANCHOR Resumo.
+\singlespacing
+\section*{Abstract}
+\noindent
+\textit{
+    Aute ad non velit nisi tempor anim fugiat laborum deserunt magna laborum ut laborum. Proident reprehenderit consectetur mollit aliqua est laboris est consequat consectetur labore. Proident voluptate duis velit culpa nisi fugiat tempor ullamco. Veniam non velit mollit do eu fugiat velit. Est occaecat do consequat adipisicing qui ullamco velit irure officia ex dolore incididunt veniam. Proident ad non eu excepteur. Excepteur culpa ad labore eiusmod sunt elit pariatur ex.
+}
+
+\onehalfspacing
+\setlength{\parindent}{1.5cm} % Recuo de primeira linha.
+
+\section{Lorem minim commodo}
+
+Aute ad non velit nisi tempor anim fugiat laborum deserunt magna laborum ut laborum. Proident reprehenderit consectetur mollit aliqua est laboris est consequat consectetur labore. Proident voluptate duis velit culpa nisi fugiat tempor ullamco. Veniam non velit mollit do eu fugiat velit. Est occaecat do consequat adipisicing qui ullamco velit irure officia ex dolore incididunt veniam. Proident ad non eu excepteur. Excepteur culpa ad labore eiusmod sunt elit pariatur ex.
+
+\subsection{Consectetur nisi}
+
+Enim minim veniam ullamco laborum eiusmod est. Culpa sit consequat amet ex ad irure in id excepteur anim dolor veniam officia consectetur. Cupidatat aute commodo tempor dolore. Magna exercitation aliquip ad labore veniam aute. Elit officia aliquip nulla ea nisi laboris aute est labore.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/lion}
+    \caption[Leão e leoa]{Leão e leoa na floresta.}
+    \label{fig:lion}
+\end{figure}
+
+\section{Lorem minim commodo}
+
+Aute ad non velit nisi tempor anim fugiat laborum deserunt magna laborum ut laborum. Proident reprehenderit consectetur mollit aliqua est laboris est consequat consectetur labore. Proident voluptate duis velit culpa nisi fugiat tempor ullamco. Veniam non velit mollit do eu fugiat velit. Est occaecat do consequat adipisicing qui ullamco velit irure officia ex dolore incididunt veniam. Proident ad non eu excepteur. Excepteur culpa ad labore eiusmod sunt elit pariatur ex.
+
+\subsection{Consectetur nisi}
+
+Enim minim veniam ullamco laborum eiusmod est. Culpa sit consequat amet ex ad irure in id excepteur anim dolor veniam officia consectetur. Cupidatat aute commodo tempor dolore. Magna exercitation aliquip ad labore veniam aute. Elit officia aliquip nulla ea nisi laboris aute est labore.
+
+\renewcommand{\arraystretch}{2} % Altera o padding da tabela.
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{0.8\textwidth}{X|X} % Configura a largura para 80 % da página.
+        \textbf{Qualidades} & \textbf{Defeitos} \\ \hline
+        Lorem               & Ipsum             \\ \hline
+        Lorem               & Ipsum             \\ \hline
+        Lorem               & Ipsum             \\ \hline
+        Lorem               & Ipsum
+    \end{tabularx}
+    \caption[André]{Qualidades e defeitos de André}
+    \label{tab:duda}
+\end{table}
+
+\section{Lorem minim commodo}
+
+\begin{enumerate}
+    \item First item.
+    \item Second item.
+    \item Third item.
+\end{enumerate}
+
+\begin{itemize}
+    \item First item.
+    \item Second item.
+    \item Third item.
+\end{itemize}
+
+\begin{description}
+    \item[\colorbox{myColor2}{\textcolor{myColor1}{Description}}] First item.
+    \item[\colorbox{myColor2}{\textcolor{myColor1}{Description}}] Second item.
+    \item[\colorbox{myColor2}{\textcolor{myColor1}{Description}}] Third item.
+\end{description}
+
+\section{Lorem minim commodo}
+
+\begin{center}
+    Laboris voluptate et esse ea est proident ut. Irure tempor aliquip do ipsum reprehenderit veniam voluptate do reprehenderit. Anim reprehenderit ipsum mollit amet labore do cillum.
+\end{center}
+
+\begin{flushright}
+    Laboris voluptate et esse ea est proident ut. Irure tempor aliquip do ipsum reprehenderit veniam voluptate do reprehenderit. Anim reprehenderit ipsum mollit amet labore do cillum.
+\end{flushright}
+
+\end{document}
