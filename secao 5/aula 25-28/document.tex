@@ -1,0 +1,62 @@
+\documentclass[12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage[a4paper, left=3cm, top=3cm, right=2cm, top=2cm]{geometry}
+\usepackage[usenames, dvipsnames]{xcolor}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{multirow}
+\usepackage{tabularx}
+
+\usepackage{amsmath}
+
+\usepackage{natbib}
+
+% ---------------------------------------------------------------------------- %
+
+% *ANCHOR tags globais
+
+\setlength{\parindent}{1.5cm}
+\setlength{\parskip}{0.5cm}
+
+% ---------------------------------------------------------------------------- %
+
+\begin{document} % *ANCHOR Início do documento.
+
+\tableofcontents
+
+\section{Testando as referências}
+\label{sec:sec1}
+
+Est adipisicing nulla occaecat do cupidatat qui qui consectetur ipsum. Sit laboris commodo voluptate proident ea ad. Lorem sit veniam consectetur veniam esse veniam sit pariatur cillum ipsum velit qui velit amet. Labore est cillum reprehenderit elit commodo cupidatat aute aliqua cupidatat irure elit sint deserunt veniam. In laborum ad ut elit anim nulla laboris ad nostrud Lorem proident pariatur. Cupidatat Lorem incididunt nulla cupidatat. \cite{george2021}
+
+Nisi duis duis culpa nisi eiusmod et commodo occaecat proident laboris proident non duis. Amet velit adipisicing incididunt ipsum consectetur aliquip sint dolore nostrud elit. Minim mollit nostrud eu labore.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/lion}
+    \caption[Leão e leoa]{Leão e leoa na floresta.}
+    \label{fig:lion}
+\end{figure}
+
+A figura \ref{fig:lion} mostra um belo leão na savana. A figura pode ser encontrada na seção \ref{sec:sec1}
+
+Laborum pariatur sit sunt qui eiusmod qui. Officia veniam nisi irure cillum officia cillum eu irure mollit sunt voluptate velit veniam. Lorem incididunt mollit sint cillum elit dolor quis. Consectetur ad fugiat voluptate non veniam minim do ad ipsum commodo officia ipsum. Cupidatat esse veniam tempor eiusmod non irure aliquip non. Occaecat consectetur exercitation qui enim reprehenderit enim ea commodo excepteur aliqua exercitation.
+
+% -------------------------------- biblioteca -------------------------------- %
+
+\nocite{assis2019} % adiciona na lista de referências algo que não foi citado no texto
+
+\newpage
+
+\addcontentsline{toc}{section}{Referências} % macete para adicionar as referências no sumário
+\bibliographystyle{apalike}
+\bibliography{reference} % nome da biblioteca (é o arquivo .bib)
+
+\end{document}

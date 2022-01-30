@@ -8,6 +8,7 @@
 !*.pdf
 !*.jpg
 !*.png
+!*.bib
 
 # permite o trackeamento dos arquivos listados acima mesmo se esses estiverem em sub-diretórios
 !*/
