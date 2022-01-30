@@ -1,0 +1,78 @@
+\documentclass[12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage[a4paper, left=3cm, top=3cm, right=2cm, top=2cm]{geometry}
+\usepackage[usenames, dvipsnames]{xcolor}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{multirow}
+\usepackage{tabularx}
+
+\usepackage{amsmath} % adiciona o modo matemático
+
+% ---------------------------------------------------------------------------- %
+
+% *ANCHOR tags globais
+
+\setlength{\parindent}{1.5cm}
+\setlength{\parskip}{0.5cm}
+
+\renewcommand{\sin}{\mathrm{sen\hspace{0.5mm}}} % renomeia 'sin' para 'sen'
+\renewcommand{\tan}{\mathrm{tg\hspace{0.5mm}}} % renomeia 'tan' para 'tg'
+
+% ---------------------------------------------------------------------------- %
+
+\begin{document} % *ANCHOR início do documento
+
+\section{Modo matemático}
+
+Esta é uma equação do segundo grau: $ax^2 + bx + c = 0$. % equação inline
+A solução dessa equação é dada pela fórmula de Bhaskara:
+
+\begin{equation} % equação matemática inblock
+    x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{equation}
+
+\begin{equation*} % equação não numerada
+    % uso de um vetor para escrever múltiplas equações na mesma linha:
+    \begin{array}{cc}
+        x_1 = \dfrac{-b - \sqrt{b^2 - 4ac}}{2a}, &
+        x_2 = \dfrac{-b + \sqrt{b^2 - 4ac}}{2a}
+    \end{array}
+\end{equation*}
+
+\begin{equation*}
+    A =
+    \begin{bmatrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{bmatrix}
+\end{equation*}
+
+\begin{equation*}
+    \begin{matrix}
+        \sin{2x} \\
+        \tan{2x}
+    \end{matrix}
+\end{equation*}
+
+\begin{equation*}
+    \left(\frac{2a}{3b}\right)
+\end{equation*}
+
+\begin{equation*}
+    \{2a\}
+\end{equation*}
+
+\begin{equation*}
+    x_{12}
+\end{equation*}
+
+\end{document}
