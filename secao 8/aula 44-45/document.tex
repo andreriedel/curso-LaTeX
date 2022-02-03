@@ -1,0 +1,70 @@
+\documentclass[12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage[a4paper, left=3cm, top=3cm, right=2cm, top=2cm]{geometry}
+\usepackage[usenames, dvipsnames]{xcolor}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{multirow}
+\usepackage{tabularx}
+
+\usepackage{amsmath}
+
+\usepackage{natbib}
+
+\usepackage{multicol}
+
+\usepackage[perpage]{footmisc}
+
+\usepackage{csquotes}
+
+\usepackage{draftwatermark} % permite adicionar marca d'água
+\usepackage{transparent} % permite adicionar transparência à elementos
+
+% ---------------------------------------------------------------------------- %
+
+% *ANCHOR tags globais
+
+\setlength{\parindent}{1.5cm}
+\setlength{\parskip}{0.5cm}
+
+% ---------------------------------------------------------------------------- %
+
+\begin{document}
+
+\SetWatermarkText{} % marca d'água vazia
+
+\tableofcontents
+
+\newpage
+
+\SetWatermarkScale{0.4} % escala da marca d'água
+\SetWatermarkText{
+  \transparent{0.2}\includegraphics{img/marca.jpg}
+} % marca d´água
+
+\section{Seção 1}
+
+Dolore non consequat deserunt ullamco non ea et qui. Occaecat laboris nisi ut velit. Lorem Lorem reprehenderit occaecat anim. Deserunt ad nulla minim do enim dolor anim adipisicing aute exercitation do ex elit laborum. Officia ipsum tempor eiusmod est eiusmod ipsum aliquip. Amet ex fugiat incididunt fugiat sit labore amet et veniam eiusmod do. Exercitation ea velit laboris duis voluptate.
+
+\section{Seção 2}
+
+Dolore non consequat deserunt ullamco non ea et qui. Occaecat laboris nisi ut velit. Lorem Lorem reprehenderit occaecat anim. Deserunt ad nulla minim do enim dolor anim adipisicing aute exercitation do ex elit laborum. Officia ipsum tempor eiusmod est eiusmod ipsum aliquip. Amet ex fugiat incididunt fugiat sit labore amet et veniam eiusmod do. Exercitation ea velit laboris duis voluptate.
+
+\newpage
+
+\section{Seção 3}
+
+Dolore non consequat deserunt ullamco non ea et qui. Occaecat laboris nisi ut velit. Lorem Lorem reprehenderit occaecat anim. Deserunt ad nulla minim do enim dolor anim adipisicing aute exercitation do ex elit laborum. Officia ipsum tempor eiusmod est eiusmod ipsum aliquip. Amet ex fugiat incididunt fugiat sit labore amet et veniam eiusmod do. Exercitation ea velit laboris duis voluptate.
+
+\section{Seção 4}
+
+Dolore non consequat deserunt ullamco non ea et qui. Occaecat laboris nisi ut velit. Lorem Lorem reprehenderit occaecat anim. Deserunt ad nulla minim do enim dolor anim adipisicing aute exercitation do ex elit laborum. Officia ipsum tempor eiusmod est eiusmod ipsum aliquip. Amet ex fugiat incididunt fugiat sit labore amet et veniam eiusmod do. Exercitation ea velit laboris duis voluptate. 
+
+\end{document}
